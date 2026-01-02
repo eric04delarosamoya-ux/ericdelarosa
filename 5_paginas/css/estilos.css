@@ -1,0 +1,52 @@
+body {
+    background-color: goldenrod;
+}
+
+#header{
+    color: yellow;
+    text-align: center;
+    background-color: black;
+    background-size: 100%;
+    border-radius: 2em;
+    font-family:fantasy ;
+    font-size: 2em;
+
+}
+
+#content {
+    background-image: url(../images/mars_spiritcolor.jpg)no-repeat;
+    text-align: center;
+    background-attachment: center;
+}
+
+#menu {
+    text-align: center;
+}
+
+a {
+    color: blueviolet;
+}
+
+h1 {
+
+}
+
+img {
+    border-radius: 5%;
+    border: solid;
+}
+button{
+    color: blueviolet;
+    background-color: blanchedalmond;
+    text-decoration:underline red 2px;
+    border-radius: 2em;
+}
+
+a > :hover{
+    color: green;
+}
+
+li {
+    border-radius: 5%;
+    display: inline;
+}
