@@ -8,6 +8,7 @@ body {
   background-position: center center;
   background-size: cover;
   font-family: 'Indie Flower', cursive;
+  margin-top: 0px;
 }
 
 h1, h2 {
@@ -38,17 +39,15 @@ p {
 }
 
 #content{
-  
+  margin: 5%;
 }
 
 #menu {
-  /*
-  Punto 1: Barra de menu siempre estara 
-  */
+  position: absolute;
   /* necesitas 3 instrucciones*/
-  /*1: */
+  margin-top: 0px;
   /*2: */
-  /*3: */
+  width: 100%;
   text-align: center;  
   background-color: #097054;
   border: 1px solid #FF9900;
@@ -68,23 +67,21 @@ p {
 }
 
 #menu li a:hover{
-  /*
-  Punto 1: Los enlaces cambian de color de fondo y estan subrayados de color azul
-  */
   /* necesitas 2 instrucciones*/
   /*1: */
   /*2: */
+  text-decoration: 2px blue;
+  color: #FF9900;
 }
 
 #footer{
-  /*
-  Punto 6: Barra de pie de pagina siempre estara 
-  */
+  position: absolute;
   /* necesitas 3 instrucciones*/
   /*1: */
   /*2: */
   /*3: */
-  
+  margin-bottom: 0px;
+  width: 100%;
   background-color: #097054;
   text-align: center;
   color: white;
@@ -112,29 +109,31 @@ p {
  /*
   Punto 2: La capa de las imagenes debe aparecer a la izquierda de la pantalla
  */
-
+  float: left;
   /* necesitas 1 instruccion*/
   /*1: */
   text-align: center;
   padding-bottom: 5px;
+  float: none;
 }
 
 #imageRight {
  /*
   Punto 2: La capa de las imagenes debe aparecer a la derecha de la pantalla
  */
-
+  float: right;
   /* necesitas 1 instruccion*/
   /*1: */
   text-align: center;
   padding-bottom: 5px;
+  float: none;
 }
 
 #textMain {
 /*
   Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
  */
-
+  display: block;
   /* necesitas 1 instruccion*/
   /*1: */
 }
@@ -143,9 +142,9 @@ p {
  /*
   Punto 3: La capa de las imagenes debe aparecer a la izquierda de la pantalla
  */
-
+  float: left;
   /* necesitas 1 instruccion*/
-  /*1: */  
+  /*1: */
   text-align: center;
   margin-bottom: 40px;
 }
@@ -158,7 +157,7 @@ p {
  /*
   Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu y del footer en que NO se queda fija al hacer scroll de la pagina.
  */
-
+  position: fixed;
   /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
   /*1: */  
   /*2: */    
@@ -175,7 +174,7 @@ p {
  /*
   Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto que no cabe en el tamaño. Solo vertical, no horizontal
  */
-
+  overflow: scroll;
   /* necesitas 2 instruccion*/
   /*1: */  
   /*2: */  
@@ -195,17 +194,18 @@ p {
   background-color: white;
   margin: 10px 250px ;
   border-radius: 30px 30px 30px 30px ;     /* resto */
+  clear: both;
 }
 
 .button {
-  	background-color: #097054; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .button:hover {
@@ -214,9 +214,7 @@ p {
 
 @media all and (max-width: 500px) {
   #imageLeft {
-    /*
-    Punto 7.1: Barra de menu siempre estara 
-    */
+    position: fixed;
     /* necesitas 1 instruccion*/
     /*1: */
     text-align: center;
@@ -224,14 +222,12 @@ p {
   }
 
   #imageRight {
-    /*
-    Punto 7.1: Barra de menu siempre estara 
-    */
+    position: fixed;
     /* necesitas 1 instruccion*/
     /*1: */
     text-align: center;
     clear: both;
-  padding-bottom: 5px;
+    padding-bottom: 5px;
   }
   
   #textCentral {
@@ -239,9 +235,7 @@ p {
   }
   
   #imageToHide {
-    /*
-    Punto 7.2: Barra de menu siempre estara 
-    */
+    position: fixed;
     /* necesitas 1 instruccion*/
     /*1: */
 
