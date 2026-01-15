@@ -8,7 +8,6 @@ body {
   background-position: center center;
   background-size: cover;
   font-family: 'Indie Flower', cursive;
-  margin-top: 0px;
 }
 
 h1, h2 {
@@ -39,13 +38,13 @@ p {
 }
 
 #content{
-  margin: 5%;
+  
 }
 
 #menu {
-  position: absolute;
+  position: fixed;
   /* necesitas 3 instrucciones*/
-  margin-top: 0px;
+  top: 0px;
   /*2: */
   width: 100%;
   text-align: center;  
@@ -60,7 +59,6 @@ p {
   text-decoration: none;
 }
 
-
 #menu li{
   display: inline;
   padding-left: 5px;  
@@ -70,17 +68,17 @@ p {
   /* necesitas 2 instrucciones*/
   /*1: */
   /*2: */
-  text-decoration: 2px blue;
+  text-decoration: underline blue;
   color: #FF9900;
 }
 
 #footer{
-  position: absolute;
+  position: fixed;
   /* necesitas 3 instrucciones*/
   /*1: */
   /*2: */
   /*3: */
-  margin-bottom: 0px;
+  bottom: 0px;
   width: 100%;
   background-color: #097054;
   text-align: center;
@@ -104,7 +102,6 @@ p {
   margin-right: 60px;
 }
 
-
 #imageLeft {
  /*
   Punto 2: La capa de las imagenes debe aparecer a la izquierda de la pantalla
@@ -114,7 +111,6 @@ p {
   /*1: */
   text-align: center;
   padding-bottom: 5px;
-  float: none;
 }
 
 #imageRight {
@@ -126,16 +122,15 @@ p {
   /*1: */
   text-align: center;
   padding-bottom: 5px;
-  float: none;
 }
 
 #textMain {
 /*
   Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
  */
-  display: block;
   /* necesitas 1 instruccion*/
   /*1: */
+  clear: both;
 }
 
 #imageToHide {
@@ -159,10 +154,14 @@ p {
  */
   position: fixed;
   /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
-  /*1: */  
-  /*2: */    
-  /*3: */    
-  /*4: */    
+  /*1: */ 
+  margin-top: 10%; 
+  /*2: */
+  margin-left: 10%;   
+  /*3: */
+  margin-right: 10%;    
+  /*4: */
+  position: absolute;
   border:2px solid red;
   background-color: white;
   margin-bottom: 5px;
@@ -194,7 +193,6 @@ p {
   background-color: white;
   margin: 10px 250px ;
   border-radius: 30px 30px 30px 30px ;     /* resto */
-  clear: both;
 }
 
 .button {
@@ -214,20 +212,20 @@ p {
 
 @media all and (max-width: 500px) {
   #imageLeft {
-    position: fixed;
     /* necesitas 1 instruccion*/
     /*1: */
     text-align: center;
     padding-bottom: 5px;
+    float: none;
   }
 
   #imageRight {
-    position: fixed;
     /* necesitas 1 instruccion*/
     /*1: */
     text-align: center;
     clear: both;
     padding-bottom: 5px;
+    float: none;
   }
   
   #textCentral {
@@ -235,10 +233,9 @@ p {
   }
   
   #imageToHide {
-    position: fixed;
     /* necesitas 1 instruccion*/
     /*1: */
-
+    float: none;
     text-align: center;
     margin-bottom: 40px;
   }
