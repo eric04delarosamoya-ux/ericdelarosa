@@ -1,0 +1,90 @@
+html {
+    background-image: url(./images/fondo-lambo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    align-content: center;
+}
+
+#layout {
+    display: flex;
+}
+
+main {
+  width: 70%;
+  padding: 20px;
+  border: 5px solid yellow;
+}
+
+aside {
+  width: 30%;
+  padding: 20px;
+}
+
+footer{
+    border: 5px solid black;
+}
+
+#menu {
+    display: flex;
+    text-align: center;
+    flex: 1;
+    border: 5px solid blue;
+    text-align: center;
+    clear: both;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+body {
+    font-family: fantasy;
+    color: red;
+}
+
+img {
+    width: 15%;
+}
+
+.img {
+    display: block;
+    margin: auto;
+    width: 25%;
+}
+
+#diablo {
+    display: flex;
+}
+
+#miura {
+    display: flex;
+}
+
+button {
+    background-color: red;
+    border-radius: 15px;
+}
+
+a {
+    color: black;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+a:hover {
+    color: red;
+}
+
+p {
+    background-color: red;
+    color: black;
+}
