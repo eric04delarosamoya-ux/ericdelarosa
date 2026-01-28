@@ -5,6 +5,8 @@
 
 html {
   background-image: url(./images/fondo-lambo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1, h2 {
