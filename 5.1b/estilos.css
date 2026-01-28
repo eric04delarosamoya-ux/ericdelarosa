@@ -237,14 +237,14 @@ float: none;
 }
 
 @media all and (max-width: 300px) {
-  #uno, #dos {
+  main, #aside {
     width: 100%;
   }
-  #logoredes ul {
+  #aside ul {
     display: flex;
     justify-content: center;
   }
-  #logoredes li {
+  #aside li {
     list-style: none;
     margin: 10px;
   }
