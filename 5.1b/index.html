@@ -1,39 +1,66 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css" />
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>práctica float 5B</title>
+        <link rel="stylesheet" type="text/css" href="./estilos.css"/>
+    </head>
+    <body>
         <div id="menu">
-            <img id="diablo" src="./images/FH5_Lamborghini_Diablo_SV.webp">
-     <ul>
-       <li><button><a href="#">Inicio</a></button></li>
-       <li><button><a href="#">Historia</a></button></li>
-       <li><button><a href="#">Mejores modelos</a></button></li>
-       <li><button><a href="#">Curiosidades</a></button></li>
-     </ul>
-     <img id="miura" src="./images/miura.webp">
+            <ul>
+                <li><button><a href="#">Inicio</a></button></li>
+                <li><button><a href="#">Modelos</a></button></li>
+                <li><button><a href="#">Historia</a></button></li>
+                <li><button><a href="#">Concesionarios</a></button></li>
+            </ul>
         </div>
-    </header>
-    <div id="layout">
-    <main>
-        <p>Lamborghini es una marca italiana de automóviles de lujo reconocida mundialmente por su diseño extremo, potencia impresionante y espíritu innovador. Desde sus inicios, la marca ha representado la combinación perfecta entre ingeniería avanzada, exclusividad y pasión por la velocidad. Cada Lamborghini está pensado no solo como un medio de transporte, sino como una experiencia única que transmite carácter, rendimiento y estilo.</p>
-    </main>
-    <aside>
-        <a href="https://x.com/Lamborghini?lang=es"><img class="img" src="./images/twitter.png"></a>
-        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiChorHt5qSAxWohf0HHXMkLpIQFnoECBAQAQ&url=https%3A%2F%2Fwww.facebook.com%2FLamborghini%2F%3Flocale%3Des_LA&usg=AOvVaw0D0qhM6-VXciI6tqf4HxVr&opi=89978449"><img class="img" src="./images/facebook.png"></a>
-        <a href="#"><img class="img" src="./images/google_plus.png"></a>
-        <a href="https://www.instagram.com/lamborghini/?hl=es"><img class="img" src="./images/instagram.png"></a>
-        <a href="https://es.linkedin.com/company/automobili-lamborghini-s-p-a-"><img class="img" src="./images/linkedin.png"></a>
-        <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw"><img class="img" src="./images/you-tube.png"></a>
-    </aside>
-    </div>
-</body>
-<footer>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, at.</p>
-</footer>
+        <header>
+            <h1>LAMBORGHINI</h1>
+        </header>
+        <div id='cookieEU'>
+            <h2>Esta webs necesita usar cookies.</h2>
+            <div id='textCookie'>
+                <p>Utilizamos cookies para asegurar que le ofrecemos la mejor experiencia en nuestro sitio web. Si continúa sin cambiar la configuración, asumiremos que está encantado de recibir todas las cookies en este sitio web.</p>
+                <a class='button' href='#' onclick="document.getElementById('cookieEU').style.display = 'none'">Cerrar</a>
+            </div>
+        </div>
+        <div id="conjunto">
+            <main>
+                <div id='textOverflow'>
+                    <h2>INTRODUCCÓN</h2>
+                    <img id="imageRight" src="./images/ferruccio.jpg" alt="ShinChanRecuadro1"/>
+                    <p>En esta página hablarems sobre el creador de Lamborghini y dos de sus modelos mas históricos el miura y el diablo.</p>
+                    <h2>FERRUCIO LAMBORGHINI</h2>
+                    <p>Ferruccio Lamborghini, nacido en 1916 en una familia agrícola italiana, se inclinó desde joven por la mecánica y, tras trabajar en la Segunda Guerra Mundial, fundó Lamborghini Trattori convirtiéndose en un exitoso industrial. Su inconformidad con fallos en los Ferrari que poseía y una respuesta despectiva de Enzo Ferrari lo impulsaron a crear en 1963 Automobili Lamborghini, marca que revolucionó el mundo del superdeportivo con modelos como el Miura. Identificada por el toro de su signo zodiacal, la firma se consolidó como un referente mundial en diseño y rendimiento. Ferruccio se retiró en los años setenta y pasó sus últimos años dedicado al vino y al turismo rural hasta su muerte en 1993, dejando un legado perdurable en la industria automotriz.</p>
+                </div>
+                <div id='textOverflow2'>
+                    <h2>MIURA</h2>
+                    <img id="imageLeft" src="./images/miura.webp" alt="ShiChan Recuadro 2"/>
+                    <p>El Lamborghini Miura, producido entre 1966 y 1972, es ampliamente reconocido como el primer superdeportivo de la historia, gracias a su innovadora configuración de motor V12 en posición central‑trasera y a su diseño adelantado a su tiempo. Concebido por jóvenes ingenieros de Lamborghini y vestido con una carrocería creada por Marcello Gandini para Bertone, el Miura combinaba un chasís ligero con una estética fluida y agresiva que redefinió por completo el lenguaje del automóvil deportivo. Su motor transversal, visible en los primeros prototipos como una declaración de intenciones, ofrecía entre 350 y 385 CV, permitiéndole alcanzar velocidades que lo situaban entre los coches más rápidos del mundo. Más allá de su rendimiento, el Miura se convirtió en un icono cultural: símbolo de exclusividad, belleza y audacia técnica, influyó en generaciones posteriores de superdeportivos y consolidó a Lamborghini como una marca capaz de desafiar y superar los límites establecidos por la industria automotriz.</p>
+                </div>
+                <div id='textOverflow3'>
+                    <h2>DIABLO</h2>
+                    <img id="imageLeft2" src="./images/FH5_Lamborghini_Diablo_SV.webp" alt="ShiChan Recuadro 3"/>
+                    <p>El Lamborghini Diablo es uno de los superdeportivos más emblemáticos de la historia del automóvil, concebido para suceder al legendario Countach y llevar las prestaciones de la marca a un nuevo nivel. Su desarrollo comenzó a mediados de los años 80 bajo el Proyecto 132, con la ambición explícita de crear el coche de producción más rápido del mundo, capaz de superar los 315 km/h. Esta meta se alcanzó en 1990, cuando el Diablo debutó oficialmente y logró una velocidad máxima de **al menos 325 km/h, además de una aceleración de 0 a 100 km/h en 4,5 segundos, cifras que lo situaron en la élite de los superdeportivos de su época .
+                    Diseñado por Marcello Gandini, el Diablo mantuvo las líneas angulosas y agresivas características de Lamborghini, incorporando puertas de tijera y una silueta baja y ancha que transmitía potencia incluso en reposo. Su motor **V12 de entre 5,7 y 6,0 litros**, montado en posición central‑trasera, entregaba entre 492 y 604 CV, dependiendo de la versión, y se combinaba con tracción trasera o total según el modelo .
+                    Durante su producción, entre 1990 y 2001, se fabricaron **2.884 unidades**, incluyendo variantes como el VT, SV, SE30, Roadster y la exclusiva versión 6.0 VT, cada una con mejoras en aerodinámica, potencia y comportamiento dinámico . El Diablo no solo consolidó la reputación de Lamborghini como fabricante de máquinas extremas, sino que también marcó una transición importante en la marca, coincidiendo con su paso de Chrysler al Grupo Volkswagen.
+                    Hoy, el Diablo sigue siendo un icono codiciado, símbolo de una era en la que la ingeniería y la audacia estética se unieron para crear un superdeportivo inolvidable.</p>
+                </div>
+              </main>
+            <div id="dos">
+                <div id="aside">
+                    <ul>
+                        <li><a href="#"><img src="./images/facebook.png" alt="redesfacebook"></a></li>
+                        <li><a href="#"><img src="./images/google_plus.png" alt="redesgoogle"></a></li>
+                        <li><a href="https://www.instagram.com/lamborghini/?hl=es"><img src="./images/instagram.png" alt="redesinstragram"></a></li>
+                        <li><a href="https://x.com/Lamborghini?lang=es"><img src="./images/twitter.png" alt="redestwitter"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw"><img src="./images/you-tube.png" alt="redesyoutube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <footer>
+                <p>LAMBORGHINI Y LA MARCA LAMBORGHINI TIENEN SUS DERECHOS RESERVADOS</p>
+            </footer>
+    </body>
 </html>

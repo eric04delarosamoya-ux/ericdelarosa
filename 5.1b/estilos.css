@@ -1,90 +1,251 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 html {
-    background-image: url(./images/fondo-lambo.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: url(./images/fondo-lambo.jpg);
+}
+
+h1, h2 {
+  text-align: center;
+  color: yellow;
+  background-color: black;
+}
+
+img {
+  border: solid 3px pink;
+  margin: 10px;
+}
+
+ul {
+  color: white;
+}
+
+p {
+  margin-bottom: 5px;
 }
 
 header {
-    align-content: center;
+  margin-top: 35px;
+  text-align: center;
+  background-color: red;
+  border-bottom: 5px solid yellow;
+  border-top: 5px solid palegoldenrod;
+  color: white;
+  padding-top: 10px;
 }
 
-#layout {
-    display: flex;
+#menu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align: center;  
+  background-color: black;
+  border: 1px solid white;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.4em;
+}
+
+#menu a{
+  color: yellow;
+  text-decoration: none;
+}
+
+button {
+  background-color: red;
+}
+
+#menu li{
+  display: inline;
+  padding-left: 5px;  
+}
+
+#menu li a:hover{
+  background-color: yellow;
+  text-decoration: underline red;
+}
+
+footer{
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: yellow;
+  border-top: 5px solid black;
+  clear: both;
+}
+
+#conjunto {
+  display: flex;
+}
+
+#aside {
+  padding: 20px;
+  width: 30%;
 }
 
 main {
   width: 70%;
   padding: 20px;
-  border: 5px solid yellow;
 }
 
-aside {
+#image {
+  text-align: right;
+  margin-right: 60px;
+}
+
+#imageLeft {
+  float: left;
+  text-align: left;
+  padding-bottom: 5px;
+  margin-top: 0%;
+  width: 35%;
+}
+
+#imageLeft2 {
+  float: left;
+  text-align: left;
+  padding-bottom: 5px;
+  margin-top: 0%;
   width: 30%;
+}
+
+#imageRight {
+  float: right;
+  text-align: right;
+  padding-bottom: 5px;
+  margin-top: 0%;
+  width: 35%;
+}
+
+#textCookie {
+  text-align: center;
+  background-color: black;
+  color: red;
+}
+
+#cookieEU {
+  margin-left: 10%;
+  margin-right: 10%;  
+  margin-top: 10%;  
+  position: absolute;
+  border:2px solid red;
+  background-color: white;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 50px black;
+}
+
+#textOverflow {
+  overflow: scroll;
+  height: 250px;
+  text-align: justify;
+  border: 5px solid black;
+  color: grey;
   padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-footer{
-    border: 5px solid black;
+#textOverflow2 {
+  overflow: scroll;
+  height: 250px;
+  text-align: justify;
+  border: 5px solid black;
+  color: grey;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
-#menu {
-    display: flex;
+#textOverflow3 {
+  overflow: scroll;
+  height: 250px;
+  text-align: justify;
+  border: 5px solid black;
+  color: grey;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: red;
+  border: none;
+  color: yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media all and (max-width: 500px) {
+  #imageLeft {
+    float: none;
     text-align: center;
-    flex: 1;
-    border: 5px solid blue;
+    padding-bottom: 5px;
+  }
+
+  #imageRight {
+    float: none;
     text-align: center;
     clear: both;
+  padding-bottom: 5px;
+  }
+  
+  #textCentral {
+    margin: 0px 0px ;
+  }
+  
+  #imageToHide {
+float: none;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #textOverflow {
+    margin-right: 0px;
+  }
+  
+  #header {
+    margin-top: 50px;
+  }
+ 
 }
 
-#menu li {
-    display: inline;
+@media all and (max-width: 300px) {
+  #header {
+    margin-top: 100px;
+  }
 }
 
-#menu a {
-    text-decoration: none;
+#uno {
+  display: flex;
+  width: 80%;
 }
 
-body {
-    font-family: fantasy;
-    color: red;
+#dos {
+  display: flex;
+ width: 20%;
 }
 
-img {
-    width: 15%;
-}
-
-.img {
-    display: block;
-    margin: auto;
-    width: 25%;
-}
-
-#diablo {
+@media all and (max-width: 300px) {
+  #uno, #dos {
+    width: 100%;
+  }
+  #logoredes ul {
     display: flex;
-}
-
-#miura {
-    display: flex;
-}
-
-button {
-    background-color: red;
-    border-radius: 15px;
-}
-
-a {
-    color: black;
-}
-
-button:hover {
-    background-color: yellow;
-}
-
-a:hover {
-    color: red;
-}
-
-p {
-    background-color: red;
-    color: black;
+    justify-content: center;
+  }
+  #logoredes li {
+    list-style: none;
+    margin: 10px;
+  }
 }
